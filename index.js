@@ -2,6 +2,7 @@ const db = require('./db/connection');
 const inquirer = require('inquirer');
 const view = require('./lib/view');
 const add = require('./lib/add');
+const update = require('./lib/update');
 
 db.connect(err => {
     if (err) throw err;
@@ -21,6 +22,7 @@ exports.start = () => {
             'Add a department',
             'Add a role',
             'Add an employee',
+            'Update an employee role',
             'Exit'
         ]
     }).then(response => {
@@ -43,6 +45,9 @@ exports.start = () => {
                 break;
             case 'Add an employee':
                 add.addEmployee();
+                break;
+            case 'Update an employee role':
+                update.updateEmployee();
                 break;
             case 'Exit':
                 db.end();
