@@ -4,12 +4,14 @@ const view = require('./lib/view');
 const add = require('./lib/add');
 const update = require('./lib/update');
 
+//connect to db and start the prompt
 db.connect(err => {
     if (err) throw err;
     console.log('database connected');
     exports.start();
 });
 
+//The starting logic
 exports.start = () => {
     inquirer.prompt({
         type: 'list',
