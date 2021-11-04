@@ -3,7 +3,7 @@ MySQL-Employee-Tracker is an interface command program that make it easy for non
 
 <h2> USER STORY <h2>
 
-As a business owner I want to be able to view and manage the departments, roles, and employees in my company So that I can organize and plan my business
+    As a business owner I want to be able to view and manage the departments, roles, and employees in my company So that I can organize and plan my business
 
 <h2> Database Design <h2>
 
@@ -31,8 +31,8 @@ As a business owner I want to be able to view and manage the departments, roles,
 
 <h2> Author <h2>
 
-William Nguyen
+    William Nguyen
 
 <h2> License <h2>
 
-The MIT license
+    The MIT license
